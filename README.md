@@ -20,17 +20,23 @@ Yandex_Go — это микросервис для выполнения вычи
     ./start.sh
 
 ## Тестирование
+Тесты
 ```bash
 go test ./...
-
-## Тестирование с помощью curl для Win
-1. curl -X POST -H "Content-Type: application/json" -d "{\"expression\": \"3+4\"}" http://localhost:8080/api/v1/calculate
-- status code = 200
-2. curl -X POST -H "Content-Type: application/json" -d "{\"expression\": \"3+\"}" http://localhost:8080/api/v1/calculate
-- status code = 422
-3. curl -X POST -H "Content-Type: application/json" -d "{\"expression\": \"3/0\"}" http://localhost:8080/api/v1/calculate
-- status code = 500
 ```
+Тестирование с помощью curl для Win
+```bash
+1. curl -X POST -H "Content-Type: application/json" -d "{\"expression\": \"3+4\"}" http://localhost:8080/api/v1/calculate
+```
+- status code = 200
+```bash
+2. curl -X POST -H "Content-Type: application/json" -d "{\"expression\": \"3+\"}" http://localhost:8080/api/v1/calculate
+```
+- status code = 422
+```bash
+3. curl -X POST -H "Content-Type: application/json" -d "{\"expression\": \"3/0\"}" http://localhost:8080/api/v1/calculate
+```
+- status code = 500
 
 ## Структура проекта
 Yandex_Go/
