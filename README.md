@@ -39,24 +39,29 @@ go test ./...
 - status code = 500
 
 ## Структура проекта
+```markdown
 Yandex_Go/
 ├── cmd/
-│ └── main.go # Точка входа в приложение
+│   └── main.go  # Точка входа в приложение
 ├── internal/
-│ ├── application/
-│ │ ├── handler.go # Обработчики HTTP-запросов
-│ │ ├── handler_test.go # Тестирование обработчиков
-│ │ ├── middleware.go # Middleware для обработки запросов
-│ │ └── service.go # Бизнес-логика
-│ └── infrastructure/
-│ ├── config/
-│ │ └── config.go # Конфигурации приложения
-│ └── http/
-│ ├── routes.go # Определение маршрутов
-│ └── server.go # Запуск HTTP-сервера
+│   ├── application/
+│   │   ├── handler.go  # Обработчики HTTP-запросов
+│   │   ├── handler_test.go  # Тестирование обработчиков
+│   │   ├── middleware.go  # Middleware для обработки запросов
+│   │   └── service.go  # Бизнес-логика
+│   └── infrastructure/
+│       ├── config/
+│       │   └── config.go  # Конфигурации приложения
+│       └── http/
+│           ├── routes.go  # Определение маршрутов
+│           └── server.go  # Запуск HTTP-сервера
 ├── pkg/
-│ └── rpn/
-│ ├── rpn.go # Логика для работы с RPN
-│ └── rpn_test.go # Тестирование логики RPN
-└── GoService # Бинарник
-└── go.mod # Управление зависимостями
+│   └── rpn/
+│       ├── rpn.go  # Логика для работы с RPN
+│       └── rpn_test.go  # Тестирование логики RPN
+├── bin/  # Директория для бинарных файлов
+│   └── GoService  # Скомпилированный бинарник
+├── go.mod  # Управление зависимостями
+├── start.sh  # Скрипт для запуска приложения
+└── README.md  # Документация проекта
+```
