@@ -12,7 +12,6 @@ Yandex_Go — это микросервис для выполнения вычи
    ```bash
    git clone https://github.com/Diverstt/Yandex_Go.git
    cd Yandex_Go
-   go mod download
    go run cmd/main.go 
 
 2. Автоматическая вариация:
