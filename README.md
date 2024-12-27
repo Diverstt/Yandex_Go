@@ -8,11 +8,10 @@ Yandex_Go — это микросервис для выполнения вычи
 - RPN (обратная польская нотация)
 
 ## Установка
-1. Ручная вариация:
-   ```bash
-   git clone https://github.com/Diverstt/Yandex_Go.git
-   cd Yandex_Go
-   go run cmd/main.go 
+```bash
+git clone https://github.com/Diverstt/Yandex_Go.git
+cd Yandex_Go
+go run cmd/main.go 
 
 ## Тестирование
 Тесты
