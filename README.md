@@ -12,13 +12,13 @@ Yandex_Go — это микросервис для выполнения вычи
 git clone https://github.com/Diverstt/Yandex_Go.git
 cd Yandex_Go
 go run cmd/main.go 
-
+```
 ## Тестирование
 Тесты
 ```bash
 go test ./...
 ```
-Тестирование с помощью curl для Win
+## Тестирование с помощью curl для Win
 ```bash
 1. curl -X POST -H "Content-Type: application/json" -d "{\"expression\": \"3+4\"}" http://localhost:8080/api/v1/calculate
 ```
@@ -36,26 +36,23 @@ go test ./...
 ```markdown
 Yandex_Go/
 ├── cmd/
-│   └── main.go  # Точка входа в приложение
+│   └── main.go
 ├── internal/
 │   ├── application/
-│   │   ├── handler.go  # Обработчики HTTP-запросов
-│   │   ├── handler_test.go  # Тестирование обработчиков
-│   │   ├── middleware.go  # Middleware для обработки запросов
-│   │   └── service.go  # Бизнес-логика
+│   │   ├── handler.go
+│   │   ├── handler_test.go
+│   │   ├── middleware.go
+│   │   └── service.go
 │   └── infrastructure/
 │       ├── config/
-│       │   └── config.go  # Конфигурации приложения
+│       │   └── config.go
 │       └── http/
-│           ├── routes.go  # Определение маршрутов
-│           └── server.go  # Запуск HTTP-сервера
+│           ├── routes.go
+│           └── server.go
 ├── pkg/
 │   └── rpn/
-│       ├── rpn.go  # Логика для работы с RPN
-│       └── rpn_test.go  # Тестирование логики RPN
-├── bin/  # Директория для бинарных файлов
-│   └── GoService  # Скомпилированный бинарник
-├── go.mod  # Управление зависимостями
-├── start.sh  # Скрипт для запуска приложения
-└── README.md  # Документация проекта
+│       ├── rpn.go
+│       └── rpn_test.go
+├── go.mod
+└── README.md
 ```
